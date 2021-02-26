@@ -7,20 +7,38 @@ public class TestMaximumTestCase {
     TestMaximum maxTest = new TestMaximum();
 
     @Test
-    public void maxElement_atFirstPosition(){
+    public void maxIntElement_atFirstPosition(){
         int result = maxTest.maxInteger();
         Assertions.assertEquals(1,result);
     }
 
     @Test
-    public void maxElement_atSecondPosition(){
+    public void maxIntElement_atSecondPosition(){
         int result = maxTest.maxInteger();
         Assertions.assertEquals(2,result);
     }
 
     @Test
-    public void maxElement_atThirdPosition(){
+    public void maxIntElement_atThirdPosition(){
         int result = maxTest.maxInteger();
+        Assertions.assertEquals(3,result);
+    }
+
+    @Test
+    public void maxFloatElement_atFirstPosition(){
+        int result = maxTest.maxFloat();
+        Assertions.assertEquals(1,result);
+    }
+
+    @Test
+    public void maxFloatElement_atSecondPosition(){
+        int result = maxTest.maxFloat();
+        Assertions.assertEquals(2,result);
+    }
+
+    @Test
+    public void maxFloatElement_atThirdPosition(){
+        int result = maxTest.maxFloat();
         Assertions.assertEquals(3,result);
     }
 }
