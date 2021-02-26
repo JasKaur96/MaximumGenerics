@@ -1,20 +1,31 @@
 package com.testmaximum;
 
-public class TestMaximum <T>{
-    T x,y,z;
+import java.util.Arrays;
 
-    public static <T extends Comparable<T>> void maximum(T[] element)
+public class TestMaximum{
+    public static Integer[] a= {1,4,5};
+    //Finds max Integer and returns its position.
+    public static int maxInteger()
     {
-        T max = element[0];
-        for(T i : element) {
-            if(i.compareTo(max) > 0)
-                max=i;
+        int max = a[0];
+        for(int i : a) {
+            if(i > max)
+                max = i;
         }
-        System.out.println("the maximum value in array is "+max);
+        int index = (Arrays.asList(a).indexOf(max)) + 1;
+        System.out.println("\nMaximum value in array is : "+max + " Position : "+index);
+        return index;
+    }
+
+    // prints the array.
+    public static void printIntArray()
+    {
+        for(int i : a)
+           System.out.println(i+ " ");
     }
 
     public static void main(String[] args) {
-        Integer[] a= {1,4,5};
-        maximum(a);
+        printIntArray();
+        maxInteger();
     }
 }
