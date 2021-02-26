@@ -6,18 +6,21 @@ import org.junit.jupiter.api.Test;
 public class TestMaximumTestCase {
     TestMaximum maxTest = new TestMaximum();
 
-//    @Test
-//    public void maxElement_atFirstPosition(){
-//        Assertions.assertEquals(true,maxTest.maximum(1,2,3));
-//    }
+    @Test
+    public void maxElement_atFirstPosition(){
+        int result = maxTest.maxInteger();
+        Assertions.assertEquals(1,result);
+    }
 
- //   @Test
-//    public void maxElement_atSecondPosition(){
-//        Assertions.assertEquals(true,maxTest.maximum(1,2,3));
-//    }
+    @Test
+    public void maxElement_atSecondPosition(){
+        int result = maxTest.maxInteger();
+        Assertions.assertEquals(2,result);
+    }
 
-//    @Test
-//    public void maxElement_atThirdPosition(){
-//        Assertions.assertEquals(true,maxTest.maximum(1,2,3));
-//    }
+    @Test
+    public void maxElement_atThirdPosition(){
+        int result = maxTest.maxInteger();
+        Assertions.assertEquals(3,result);
+    }
 }
