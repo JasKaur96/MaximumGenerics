@@ -41,4 +41,22 @@ public class TestMaximumTestCase {
         int result = maxTest.maxFloat();
         Assertions.assertEquals(3,result);
     }
+
+    @Test
+    public void maxStringElement_atFirstPosition(){
+        int result = maxTest.maxString();
+        Assertions.assertEquals(1,result);
+    }
+
+    @Test
+    public void maxStringElement_atSecondPosition(){
+        int result = maxTest.maxString();
+        Assertions.assertEquals(2,result);
+    }
+
+    @Test
+    public void maxStringElement_atThirdPosition(){
+        int result = maxTest.maxString();
+        Assertions.assertEquals(3,result);
+    }
 }
