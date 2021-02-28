@@ -19,7 +19,6 @@ public class TestMaximum<T extends Comparable<T>>{
         return max;
     }
 
-
     public T maxElement(){
         return TestMaximum.maxElement(elements);
     }
